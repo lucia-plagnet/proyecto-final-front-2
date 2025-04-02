@@ -1,0 +1,192 @@
+:root {
+
+    --primary-color: #481a54;
+    --secondary-color: #5b3165;
+    --contrast-color: #FFFFFF;
+    --contrast-secondary-color: black;
+    --contrast-tertiary-color: #454245;
+
+    --font-primary: 'Segoe UI', sans-serif;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--contrast-color);
+    height: 100vh;
+}
+
+
+.login-container h1 {
+    font-size: 4rem;
+    color: var(--contrast-secondary-color);
+    font-weight: 600;
+    font-family: var(--font-primary);
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+.login-container span {
+    color: var(--contrast-tertiary-color);
+    font-size: 1.5rem;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.input-group {
+    margin: 1rem;
+}
+
+/* Etiquetas de los campos de formulario */
+.input-group label {
+    font-size: 1.3rem;
+    color: var(--contrast-secondary-color);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Estilo de los inputs */
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    background-color: var(--contrast-color);
+    color: var(--contrast-tertiary-color);
+    box-sizing: border-box;
+}
+
+/* Estilo de los inputs cuando están en foco */
+.input-group input:focus {
+    border-color: var(--link-color);
+    box-shadow: var(--link-color) 0px 0px 8px 0px ; 
+    outline: none;
+    background-color: #fff;
+}
+
+/* Estilo para el mensaje de carga */
+.loading-message {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+/* Estilo del botón de submit */
+.login-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    position: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Efecto cuando el usuario pasa el mouse sobre el botón */
+.login-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Enlace de redirección al reset de contraseña */
+.forgot-password-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: var(--link-color);
+}
+
+.forgot-password-link:hover {
+    text-decoration: underline;
+}
+
+
+.register-link {
+    color: var(--link-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+    
+}
+
+
+.register-box p {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--contrast-tertiary-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+/* LOGO*/
+
+img {
+    width: 13rem;
+    /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+    /* Mantiene la proporción del logo */
+    position: absolute;
+    top: 0rem;
+}
+
+
+@media (min-width: 300px) and (max-width: 768px) {
+
+.login-container h1 {
+    font-size: 2rem;
+    margin-top: 15rem;
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+}
+.login-container span {
+    font-size: 1rem;
+    text-align: center;
+    max-width: 90%;
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.login-container h1 {
+    font-size: 3rem;
+    margin-top: 15rem;
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+}
+.login-container span {
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 90%;
+}
+
+}
+
+@media (min-width: 1025px) and (max-width: 2000px) {
+   
+  .login-container h1 {
+    font-size: 4rem;
+    margin-top: 15rem;
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+}
+.login-container span {
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 90%;
+}
+
+}

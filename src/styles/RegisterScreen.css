@@ -1,0 +1,187 @@
+:root {
+
+    --primary-color: #481a54;
+    --secondary-color: #5b3165;
+    --contrast-color: #FFFFFF;
+    --contrast-secondary-color: black;
+    --contrast-tertiary-color: #454245;
+
+    --font-primary: 'Segoe UI', sans-serif;
+}
+
+.register-container img{
+    margin-top: 0rem;
+}
+/* Estilo principal del contenedor */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--contrast-color);
+    box-sizing: border-box;
+}
+
+/* Título principal */
+.register-title {
+    font-size: 4rem;
+    color: var(--contrast-secondary-color);
+    font-weight: 600;
+    font-family: var(--font-primary);
+    margin-top: 4rem;
+    text-align: center;
+}
+
+span {
+    color: var(--contrast-tertiary-color);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Estilo del formulario */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--contrast-color);
+    border-radius: 8px;
+    box-shadow: none;
+    margin-top: 2rem;
+}
+
+/* Estilo de los grupos de formulario */
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+/* Etiquetas de los campos de formulario */
+.form-label {
+    font-size: 1.3rem;
+    color: var(--contrast-secondary-color);
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+/* Estilo de los inputs */
+.form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    background-color: var(--contrast-color);
+    color: var(--contrast-tertiary-color);
+    box-sizing: border-box;
+}
+
+/* Estilo de los inputs cuando están en foco */
+.form-input:focus {
+    border-color: var(--link-color);
+    box-shadow: var(--link-color) 0px 0px 8px 0px;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Estilo de los mensajes de error */
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Estilo para el mensaje de carga */
+.loading-message {
+    font-size: 1rem;
+    color: #007a5a;
+}
+
+/* Estilo del botón de submit */
+.submit-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    position: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 1rem;
+}
+
+/* Efecto cuando el usuario pasa el mouse sobre el botón */
+.submit-button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Enlace de redirección al login */
+div .login-redirect p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--contrast-tertiary-color);
+}
+
+.login-redirect a {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: var(--link-color);
+}
+
+/* Efecto de hover sobre el enlace */
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+.register-title {
+    font-size: 1.8rem;
+    margin-top: 7rem;
+}
+
+span {
+    font-size: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+.register-form {
+    margin-top: 0rem;
+}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.register-title {
+    font-size: 1.8rem;
+    margin-top: 7rem;
+}
+
+span {
+    font-size: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+.register-form {
+    margin-top: 0rem;
+}
+}
+
+@media (min-width: 1025px) and (max-width: 2000px) {
+ .register-title {
+    font-size: 3rem;
+    margin-top: 9rem;
+}
+
+span {
+    font-size: 1.5rem;
+    margin: 2rem;
+    text-align: center;
+}
+.register-form {
+    margin-top: 0rem;
+}
+
+}

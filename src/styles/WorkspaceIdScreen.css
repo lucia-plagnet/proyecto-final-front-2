@@ -1,0 +1,344 @@
+:root {
+
+  --primary-color: #481a54;
+  --secondary-color: #5b3165;
+  --contrast-color: #FFFFFF;
+  --contrast-secondary-color: black;
+  --contrast-tertiary-color: #454245;
+  --contrast-quaternary-color: #f9edff;
+  --font-primary: 'Segoe UI', sans-serif;
+}
+
+.workspace-details-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: var(--font-primary);
+  background-color: var(--contrast-color);
+  font-family: var(--font-primary);
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+
+}
+
+.workspace-content {
+  display: flex;
+  flex: 1;
+  gap: 2rem;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--secondary-color);
+}
+
+
+.channels-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+div .workspace-content h1 {
+  text-align: center;
+  margin: 20px 15px;
+  color: var(--contrast-color);
+  font-size: 1.5rem;
+  font-family: var(--font-primary);
+}
+
+div .channels-header button {
+  background-color: var(--primary-color);
+  color: var(--contrast-color);
+  max-width: 3rem;
+  max-height: 3rem;
+  margin: 1rem;
+  font-size: 2rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+div .channels-header .profile-btn {
+  margin-left: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 5rem;
+  font-size: 1.4rem;
+  font-family: var(--font-primary);
+  padding: 0.5rem;
+}
+
+.channels-section {
+  overflow-y: auto;
+  min-width: 22rem;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  /* Ancho de la barra */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #957f97;
+  /* Color de la barra desplazable */
+  border-radius: 10px;
+
+}
+
+
+ul h2 {
+  color: var(--contrast-quaternary-color);
+  font-size: 1.3rem;
+  font-family: var(--font-primary);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.members-section h2 {
+  color: var(--contrast-quaternary-color);
+  font-size: 1.3rem;
+  font-family: var(--font-primary);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.channels-section {
+  background-color: var(--secondary-color);
+  padding: 10px;
+  color: var(--contrast-quaternary-color);
+}
+
+.channels-section li {
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s;
+}
+
+.channels-section li:hover {
+  background-color: #957f97;
+}
+
+.active-channel {
+  background-color: var(--contrast-quaternary-color);
+  color: var(--primary-color);
+}
+
+
+/* Messages section */
+.messages-section {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--contrast-color);
+  word-wrap: break-word;
+  max-width: 100%;
+  max-height: 100vh;
+  min-width: 80%;
+}
+
+.messages-section h2 {
+  height: 8rem;
+  color: var(--contrast-secondary-color);
+  border-bottom: #8D8D8D solid 2px;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+div .chat-panel {
+  background-color: var(--contrast-color);
+  width: 92rem;
+  margin: 1rem;
+  height: 35rem;
+}
+
+.messages-list {
+  background-color: var(--contrast-color);
+  width: 92rem;
+  height: 35rem;
+  word-wrap: break-word;
+  overflow-x: scroll;
+}
+
+.messages-list p {
+  margin: 1rem;
+  color: var(--contrast-secondary-color);
+}
+
+.messages-list p:hover {
+  background-color: #f8f8f8;
+}
+
+.send-message-form {
+  min-width: 95%;
+  margin: 1rem;
+  height: 10rem;
+  display: flex;
+  box-shadow: none;
+}
+
+.send-message-form textarea {
+  max-width: 80%;
+  flex: 1;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  resize: none;
+  overflow-y: auto;
+  font-size: var(--font-primary);
+  border: #8D8D8D solid 2px;
+
+}
+
+.send-message-form button {
+  max-width: 5%;
+  max-height: auto;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.send-message-form svg {
+  width: 45px;
+  height: 45px;
+}
+
+.send-message-form svg:hover {
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.send-message-form button:hover {
+  background-color: transparent;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+
+
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .workspace-details-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+  }
+
+  .workspace-content {
+    gap: 2rem;
+    max-width: 100%;
+  }
+
+  div .workspace-content h1 {
+    margin: 2px 1px;
+    font-size: 1rem;
+  }
+
+  .channels-header {
+    display: flex;
+    position: relative;
+  }
+
+  div .channels-header .create-channel-btn {
+    max-width: 2rem;
+    max-height: 2rem;
+    margin: 0.2rem;
+    font-size: 1rem;
+    position: absolute;
+    left: 6rem;
+  }
+
+  div .channels-header .profile-btn {
+    max-width: 2rem;
+    max-height: 1.9rem;
+    margin: 0.2rem;
+    padding: 0rem;
+    position: absolute;
+    left: 3rem;
+  }
+
+  .channels-section {
+    overflow-y: auto;
+    max-width: 20%;
+  }
+
+  ul h2 {
+    font-size: 1rem;
+  }
+
+  .members-section h2 {
+    font-size: 1rem;
+  }
+
+
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .workspace-details-container {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.8rem;
+    }
+
+    .workspace-content {
+      gap: 2rem;
+      max-width: 100%;
+    }
+
+    div .workspace-content h1 {
+      margin: 2px 1px;
+      font-size: 1rem;
+    }
+
+    .channels-header {
+      display: flex;
+      position: relative;
+    }
+
+    div .channels-header .create-channel-btn {
+      max-width: 2rem;
+      max-height: 2rem;
+      margin: 0.2rem;
+      font-size: 1rem;
+      position: absolute;
+      left: 6rem;
+    }
+
+    div .channels-header .profile-btn {
+      max-width: 2rem;
+      max-height: 1.9rem;
+      margin: 0.2rem;
+      padding: 0rem;
+      position: absolute;
+      left: 3rem;
+    }
+
+    .channels-section {
+      overflow-y: auto;
+      max-width: 20%;
+    }
+
+    ul h2 {
+      font-size: 1rem;
+    }
+
+    .members-section h2 {
+      font-size: 1rem;
+    }
+
+
+
+  }
+
+  @media (min-width: 1025px) and (max-width: 2000px) {}
+}
